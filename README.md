@@ -1,7 +1,9 @@
-Scrapy demo
+Scrapy Demo
 ===
 
-# 創建一個 Scrapy 項目
+這是我學習 Scrapy 的項目。
+
+## 創建一個 Scrapy 項目
 
 1. 安裝 pip，並利用 pip下載 Scrapy 並加入環境變量 PATH
 
@@ -17,3 +19,16 @@ pip install scrapy
 # PIP
 export PATH=~/.local/bin:$PATH
 ```
+
+2. 創建項目
+
+
+```bash
+# 創建一個名為 **DEMO** 的項目
+scrapy startproject DEMO
+# 進入資料夾
+cd DEMO
+# 輸入 爬蟲名(取代 example) 和 爬的網域(取代 example.cn)
+scrapy genspider example example.com
+```
+> genspider：general spider 生成爬蟲
