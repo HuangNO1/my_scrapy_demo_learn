@@ -12,6 +12,9 @@ BOT_NAME = 'DEMO'
 SPIDER_MODULES = ['DEMO.spiders']
 NEWSPIDER_MODULE = 'DEMO.spiders'
 
+# 設置 LOG 的顯示
+# WARNING 以下的日誌內容不會顯示
+LOG_LEVEL = "WARNING"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'DEMO (+http://www.yourdomain.com)'
@@ -62,9 +65,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'DEMO.pipelines.DemoPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'DEMO.pipelines.DemoPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

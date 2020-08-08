@@ -20,6 +20,11 @@ pip install scrapy
 export PATH=~/.local/bin:$PATH
 ```
 
+```bash
+source ~/.profile
+source ~/.zshrc
+```
+
 2. 創建項目
 
 
@@ -28,7 +33,7 @@ export PATH=~/.local/bin:$PATH
 scrapy startproject DEMO
 # 進入資料夾
 cd DEMO
-# 輸入 爬蟲名(取代 example) 和 爬的網域(取代 example.cn)
+# 輸入 爬蟲名(取代 example) 和 爬的網域(取代 example.com)
 scrapy genspider example example.com
 ```
 > genspider：general spider 生成爬蟲
